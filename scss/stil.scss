@@ -12,7 +12,7 @@ main {
         background-color: $svetlosiva;
         text-align: center;
         float: left;
-        
+        margin-bottom: 20em;
         ul {
             list-style: none;
             
@@ -52,7 +52,6 @@ main {
         text-align: center;
         width: 100%;
         display: inline-block;
-        margin-top: 20em;
         line-height: 2.5em;
     }
     .dugmeMain {
@@ -211,4 +210,60 @@ footer {
     padding: .5em;
     text-align: center;
     color: #fff;
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        nav {
+            text-align: left;
+            margin-bottom: 15em;
+            ul 
+            {
+                li {
+                    .logo{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .info {
+        text-align: left;
+        h2 {
+            text-align: left;
+        }
+        .plutajuci {
+            text-align: center;
+            width: 40%;
+        }
+    }
+   
+    .getin {
+        h2 {
+            text-align: right;
+        }
+        span {
+            text-align: right;
+            margin: 0;
+            width: 100%;
+        }
+        form {
+            width: 100%;
+        }
+    }
+    .linkimapa {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        .mapa {
+            width: 100%;
+            order: 1;
+            
+        }
+        .linkovi {
+           order: 2;
+           width: 100%;
+           font-size: .8em;
+        }
+    }
 }
