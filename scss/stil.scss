@@ -73,6 +73,14 @@ main {
 
 section {
     padding: 2em 10%;
+    span {
+        color: $crvena;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: .9em;
+    }
     h2 {
         font-family: $font_naslova;
         font-size: 2.7em;
@@ -83,7 +91,7 @@ section {
     }
 }
 
-#info {
+.info {
     text-align: center;
     background-color: $svetlosiva;
     .plutajuci {
@@ -114,14 +122,7 @@ section {
         }
         p {
             text-align: justify;
-            span {
-                color: $crvena;
-                display: block;
-                width: 80%;
-                margin: 0 auto;
-                text-align: center;
-                font-size: .9em;
-            }
+            
         }
         &:hover {
             background-color: $crna;
@@ -139,3 +140,36 @@ section {
     }
 }
 
+.getin {
+    form {
+        margin: 2em auto;
+        width: 70%;
+        padding: .5em;
+        background-color: $svetlosiva;
+        select, input[type="text"],input[type="email"],{
+            padding: 10px;
+        }
+        select {
+            display: inline-block;
+            width: 10%;
+        }
+        input[type="text"]{
+            width: 44%;
+            display: inline-block;
+        }
+        input[type="email"] {
+            width: 99%;
+            margin: .5em auto;
+        }
+        textarea {
+            width: 99%;
+            height: 7em;
+        }
+        input[type="button"] {
+            width: 99%;
+            padding: 1em;
+            background-color: $crvena;
+            color: #fff;
+        }
+    }
+}
