@@ -173,3 +173,35 @@ section {
         }
     }
 }
+
+.linkovi {
+    background-color: $crna;
+    @include clearfix;
+    h3 {
+        color:#fff;
+        font-weight: bold;
+        font-size: 1.4em; 
+    }
+    .linkovi {
+        float : left;
+        width: 65%;
+        padding-top:1.2em;
+        a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 1.2em;
+            span {
+                color: $crvena;
+                display: inline-block;
+                width: 1em;
+            }
+        }
+    }
+    .mapa {
+        float: right;
+        width: 30%;
+        iframe {
+            width: 100%;
+        }
+    }
+}
