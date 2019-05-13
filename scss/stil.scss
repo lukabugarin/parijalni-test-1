@@ -267,3 +267,48 @@ footer {
         }
     }
 }
+
+@media screen and (max-width:680px) {
+    main {
+        background-image: none;
+        background-color: $crna;
+        .dugmeMain {
+            width: 60%;
+        }
+        h1 {
+            background: none;
+        }
+        nav {
+            ul {
+                li {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.info {
+    .plutajuci {
+        width: 100%;
+    }
+}
+
+.getin {
+    display: none;
+}
+
+.linkimapa {
+    h3 {
+        display: none;
+    }
+    .linkovi {
+        a {
+            display: block;
+            text-align: center;
+            padding: .5em;
+        }
+
+    }
+}
