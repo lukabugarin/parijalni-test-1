@@ -65,6 +65,77 @@ main {
         width: 15%;
         margin-top: 2em;
         text-align: center;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+
+section {
+    padding: 2em 10%;
+    h2 {
+        font-family: $font_naslova;
+        font-size: 2.7em;
+        text-align: center;
+        margin-bottom: 2em;;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+#info {
+    text-align: center;
+    background-color: $svetlosiva;
+    .plutajuci {
+        width: 30%;
+        display: inline-block;
+        margin: 1em 1em;
+        padding: 1em;
+        border-radius: 10px;
+        .slicica {
+            background-color: $svetlosiva;
+            border-radius: 50%;
+            width: 8em;
+            height: 8em;
+            padding-top: 2em;
+            margin: 0 auto;
+            
+            img {
+                width: 4em;
+                display: block;
+                margin: 0 auto;
+            }
+
+        }
+        h3 {
+            font-family: $font_naslova;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        p {
+            text-align: justify;
+            span {
+                color: $crvena;
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                font-size: .9em;
+            }
+        }
+        &:hover {
+            background-color: $crna;
+            cursor: pointer;
+            .slicica {
+                background-color: $crvena;
+            }
+            h3 {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
     }
 }
 
